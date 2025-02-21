@@ -1,0 +1,8 @@
+CREATE TABLE pagamentos (
+    cod_pagamento INT PRIMARY KEY,
+    cod_agendamento INT,
+    valor_pag DECIMAL(10,2) NOT NULL,
+    forma_pag VARCHAR(20) NOT NULL,
+    data_pag DATETIME NOT NULL,
+    FOREIGN KEY (cod_agendamento) REFERENCES agendamentos(cod_agendamento)
+);
