@@ -1,0 +1,6 @@
+CREATE TABLE vagas (
+    cod_vaga INT PRIMARY KEY,
+    numero_vaga INT UNIQUE NOT NULL,
+    tipo_veiculo VARCHAR(20) NOT NULL,
+    disponivel BOOLEAN NOT NULL
+);
