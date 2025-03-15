@@ -22,7 +22,7 @@ class Vaga:
 
     def listar(self):
         conexao = BancoDeDados.obter_conexao()
-        cursor = conexao.cursor(dictionary=True)  # ← Alteração aqui
+        cursor = conexao.cursor(dictionary=True)
         try:
             cursor.execute("SELECT * FROM vagas")
             return cursor.fetchall()

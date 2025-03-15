@@ -1,9 +1,0 @@
-CREATE TABLE veiculos (
-    cod_veiculo INT PRIMARY KEY,
-    cod_cliente INT,
-    placa VARCHAR(10) UNIQUE NOT NULL,
-    marca VARCHAR(50),
-    modelo VARCHAR(50),
-    cor VARCHAR(30),
-    FOREIGN KEY (cod_cliente) REFERENCES clientes(cod_cliente)
-);
