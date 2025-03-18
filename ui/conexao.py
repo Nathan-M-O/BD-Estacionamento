@@ -13,3 +13,4 @@ class BancoDeDados:
         except mysql.connector.Error as erro:
             print(f"Erro ao conectar ao banco de dados: {erro}")
             return None
+            
